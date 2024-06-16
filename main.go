@@ -67,8 +67,6 @@ func purge(option Options) {
 
 func loadOptions() Options {
 	log.Println("[loadOptions] Loading options...")
-	log.Println("[loadOptions] TOKEN:", os.Getenv("TOKEN"))
-	log.Println("[loadOptions] DOMAIN:", os.Getenv("DEBUG"))
 
 	debug := false
 	if os.Getenv("DEBUG") == "true" || os.Getenv("DEBUG") == "TRUE" {
